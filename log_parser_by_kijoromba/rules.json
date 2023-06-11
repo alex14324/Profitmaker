@@ -1,0 +1,148 @@
+{
+  "redline": {
+    "display_name": "Redline Stealer",
+    "signatures": {
+      "files_dirs": [
+        "InstalledBrowsers.txt",
+        "InstalledSoftware.txt",
+        "Passwords.txt",
+        "Screenshot.jpg",
+        "DomainDetects.txt",
+        "UserInformation.txt",
+        "Cookies",
+        "ImportantAutofills.txt",
+        "Autofills",
+        "FileGrabber"
+      ]
+    },
+    "passwords": {
+      "type": "file",
+      "path": "Passwords.txt",
+      "format": {
+        "url": "URL",
+        "user": "Username",
+        "passw": "Password",
+        "app": "Application"
+      },
+      "process": {
+        "url": "line.split(': ')[1].rstrip('\\n')",
+        "user": "line.split(': ')[1].rstrip('\\n')",
+        "passw": "line.split(': ')[1].rstrip('\\n')",
+        "app": "line.split(': ')[1].rstrip('\\n')"
+      }
+    }
+  },
+  "racoon_v1": {
+    "display_name": "Racoon v1 (OLD)",
+    "signatures": {
+      "files_dirs": [
+        "passwords.txt",
+        "System Info.txt",
+        "Screenshot.jpeg",
+        "browsers"
+      ]
+    },
+    "passwords": {
+      "type": "file",
+      "path": "passwords.txt",
+      "format": {
+        "url": "URL",
+        "user": "USER",
+        "passw": "PASS",
+        "app": "SOFT"
+      },
+      "process": {
+        "url": "line.split(': ')[1].rstrip('\\n')",
+        "user": "line.split(': ')[1].rstrip('\\n')",
+        "passw": "line.split(': ')[1].rstrip('\\n')",
+        "app": "line.split(': ')[1].rstrip('\\n')"
+      }
+    }
+  },
+  "type_1": {
+    "display_name": "Unknown, type 1",
+    "signatures": {
+      "files_dirs": [
+        "Autofill",
+        "Cookies",
+        "Soft",
+        "information.txt",
+        "passwords.txt",
+        "screenshot.jpg"
+      ]
+    },
+    "passwords": {
+      "type": "file",
+      "path": "passwords.txt",
+      "format": {
+        "url": "Host",
+        "user": "Login",
+        "passw": "Password",
+        "app": "Soft"
+      },
+      "process": {
+        "url": "line.split(': ')[1].rstrip('\\n')",
+        "user": "line.split(': ')[1].rstrip('\\n')",
+        "passw": "line.split(': ')[1].rstrip('\\n')",
+        "app": "line.split(': ')[1].rstrip('\\n')"
+      }
+    }
+  },
+  "hunter": {
+    "display_name": "Hunter Stealer by @NoFeX228 (telegram)",
+    "signatures": {
+      "files_dirs": [
+        "Browsers",
+        "Facebook",
+        "Files",
+        "Steam",
+        "Desktop.png",
+        "readme.txt"
+      ]
+    },
+    "passwords": {
+      "type": "file",
+      "path": "Browsers/Passwords.txt",
+      "format": {
+        "url": "| Site",
+        "user": "| Login",
+        "passw": "| Password",
+        "app": ""
+      },
+      "process": {
+        "url": "line.split(': ')[1].rstrip('\\n')",
+        "user": "line.split(': ')[1].rstrip('\\n')",
+        "passw": "line.split(': ')[1].rstrip('\\n')",
+        "app": "pass"
+      }
+    }
+  },
+  "type_2": {
+    "display_name": "Unknown, type 2",
+    "signatures": {
+      "files_dirs": [
+        "Browsers",
+        "Files",
+        "_Info.txt",
+        "_Screen.jpg",
+        "_FilePasswords.txt"
+      ]
+    },
+    "passwords": {
+      "type": "file",
+      "path": "_FilePasswords.txt",
+      "format": {
+        "url": "Url",
+        "user": "Login",
+        "passw": "Pass",
+        "app": "Browser"
+      },
+      "process": {
+        "url": "line.split(': ')[1].rstrip('\\n')",
+        "user": "line.split(': ')[1].rstrip('\\n')",
+        "passw": "line.split(': ')[1].rstrip('\\n')",
+        "app": "line.split(': ')[1].rstrip('\\n')"
+      }
+    }
+  }
+}

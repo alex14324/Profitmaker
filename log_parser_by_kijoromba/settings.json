@@ -1,0 +1,6 @@
+{
+  "output_dir": "./dump",
+  "iput_dir": ".",
+  "threads": 3,
+  "rules_path": "./rules.json"
+}

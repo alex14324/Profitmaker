@@ -1,0 +1,36 @@
+<pre><font color="#4E9A06"><b>______              __  _  _    ___  ___        _               </b></font>
+<font color="#4E9A06"><b>| ___ \            / _|(_)| |   |  \/  |       | |              </b></font>
+<font color="#4E9A06"><b>| |_/ /_ __  ___  | |_  _ | |_  | .  . |  __ _ | | __ ___  _ __ </b></font>
+<font color="#4E9A06"><b>|  __/| &apos;__|/ _ \ |  _|| || __| | |\/| | / _` || |/ // _ \| &apos;__|</b></font>
+<font color="#4E9A06"><b>| |   | |  | (_) || |  | || |_  | |  | || (_| ||   &lt;|  __/| |   </b></font>
+<font color="#4E9A06"><b>\_|   |_|   \___/ |_|  |_| \__| \_|  |_/ \__,_||_|\_\___||_|   </b></font>
+ 
+<font color="#CC0000"><b>                         _    </b></font>
+<font color="#CC0000"><b>|_  \/   |/  o   | _ __ |_) _ </b></font>
+<font color="#CC0000"><b>|_) /    |\  | \_|(_)||||_)(_|</b></font>
+
+usage: extractor2.py [-h] [-t [thread_count]] [-u [ADD_URL]] [-i [PUT_IP]] [-g [PUT_GEO]] [-s [splitter]] [-d [domain]] [-f [domain_list]]
+                     [-r [remove_dups]]
+                     input_dir out_dir
+
+Extract data from logs directory. By @KijoRomBa:)
+
+positional arguments:
+  input_dir          input dir with logs
+  out_dir            out_dir dir for extracted data
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -t [thread_count]  count of workers (default 10)
+  -u [ADD_URL]       1 - add url to output string, host:user:pass (default 0 - user:pass)
+  -i [PUT_IP]        1 - add ip to output string, doesn`t work with -g
+  -g [PUT_GEO]       1 - add country code to output string, doesn`t work with -i
+  -s [splitter]      splitter for data(default &quot;:&quot;)
+  -d [domain]        extract only specified domain
+  -f [domain_list]   extract only specified in file domains
+  -r [remove_dups]   remove duplicate strings
+</pre>
+
+pip install -r requirements.txt
+
+
